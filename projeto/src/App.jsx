@@ -1,12 +1,20 @@
-import './App.css'
+import './App.css';
+import AdicionarUsuario from './pages/AdicionarUsuario';
 
 function App() {
- 
   return (
     <>
-      <h1>Olá, Juju! </h1>
-    </>
-  )
-}
-
-export default App 
+      <main className="main">
+        <h2>Bem-vindo ao Sistema de Cadastro de Usuários</h2>
+        <p>Este é um sistema simples para gerenciar usuários</p>
+        <br />
+        {/* Componente importado e fechado corretamente com a barra no final */}
+        <AdicionarUsuario />
+      </main>
+  
+</>
+  )}
+    
+export default App;
+  
+    
