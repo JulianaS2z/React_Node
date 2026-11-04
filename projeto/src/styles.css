@@ -1,1 +1,58 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  color-scheme: light;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #233226;
+  background: #e8e1c9;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --forest: #183b2b;
+  --forest-light: #28523a;
+  --gold: #c99b3b;
+  --gold-light: #e6ca78;
+  --parchment: #f5efd9;
+  --ink: #233226;
+  --muted: #64705e;
+  --danger: #8d3e31;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  min-height: 100%;
+  background: #e8e1c9;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(ellipse at 50% 0, rgb(230 202 120 / 22%), transparent 48rem),
+    linear-gradient(145deg, #e8e1c9, #d9d4b8);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 3px;
+}
+
+::selection {
+  color: var(--parchment);
+  background: var(--forest-light);
+}

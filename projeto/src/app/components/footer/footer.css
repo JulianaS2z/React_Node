@@ -1,0 +1,24 @@
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4rem 1rem;
+  padding: 1rem 1.25rem;
+  border-top: 1px solid rgb(201 155 59 / 70%);
+  color: var(--parchment);
+  background: var(--forest);
+  box-shadow: 0 -4px 14px rgb(24 59 43 / 10%);
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 540px) {
+  footer {
+    justify-content: center;
+    text-align: center;
+  }
+}

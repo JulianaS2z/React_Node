@@ -1,0 +1,49 @@
+header {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(1.5rem, 5vw, 2.75rem) 1.5rem;
+  border: 1px solid var(--gold);
+  border-radius: 0.85rem;
+  background:
+    radial-gradient(ellipse at 50% 115%, rgb(201 155 59 / 22%), transparent 55%),
+    linear-gradient(135deg, #214a34, var(--forest) 70%);
+  box-shadow:
+    0 0.5rem 1.5rem rgb(24 59 43 / 18%),
+    inset 0 0 0 5px rgb(230 202 120 / 9%);
+  text-align: center;
+}
+
+header::before,
+header::after {
+  position: absolute;
+  top: 50%;
+  width: clamp(2rem, 10vw, 7rem);
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-light));
+  content: '';
+}
+
+header::before {
+  left: 1.5rem;
+}
+
+header::after {
+  right: 1.5rem;
+  transform: rotate(180deg);
+}
+
+h1 {
+  margin: 0;
+  color: var(--gold-light);
+  font-size: clamp(1.55rem, 4vw, 2.65rem);
+  font-weight: 600;
+  letter-spacing: 0.045em;
+  text-shadow: 0 2px 12px rgb(0 0 0 / 35%);
+}
+
+@media (max-width: 540px) {
+  header::before,
+  header::after {
+    display: none;
+  }
+}

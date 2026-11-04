@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: min(100% - 2rem, 72rem);
+  min-height: 100vh;
+  margin-inline: auto;
+  padding-block: 1.5rem;
+}
+
+main {
+  flex: 1;
+  padding-block: clamp(2rem, 6vw, 4.5rem);
+}
+
+@media (max-width: 540px) {
+  .container {
+    width: min(100% - 1rem, 72rem);
+    padding-block: 0.5rem;
+  }
+}

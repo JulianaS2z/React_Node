@@ -1,1 +1,24 @@
-<p>adicionar-usuario works!</p>
+<section>
+    <h2>Adicionar Usuário</h2>
+    <form (ngSubmit)="adicionarUsuario()">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" [(ngModel)]="nome" name="nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" [(ngModel)]="email" name="email" required>
+
+        <button type="submit">Adicionar</button>
+    </form>
+
+    <h2>Usuários Cadastrados</h2>
+
+    @for (usuario of usuarios; track usuario) {
+        <div class="usuario-card">
+            <p><strong>Nome:</strong> {{ usuario.nome }}</p>
+            <p><strong>Email:</strong> {{ usuario.email }}</p>
+            <button type="button" (click)="excluirUsuario(usuario)">Excluir</button>
+        </div>
+    } @empty {
+        <p>Nenhum usuário cadastrado.</p>
+    }
+</section>
