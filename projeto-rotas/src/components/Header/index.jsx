@@ -17,6 +17,8 @@ export function Header() {
                 <nav className="site-nav" aria-label="Navegação principal">
                     <NavLink className={({ isActive }) => isActive ? 'site-nav__link is-active' : 'site-nav__link'} to="/" end>Início</NavLink>
                     <NavLink className={({ isActive }) => isActive ? 'site-nav__link is-active' : 'site-nav__link'} to="/sobre-nos">Sobre nós</NavLink>
+                    <NavLink className={({ isActive }) => isActive ? 'site-nav__link is-active' : 'site-nav__link'} to="/ecommerce">E-commerce</NavLink>
+                    <NavLink className={({ isActive }) => isActive ? 'site-nav__link is-active' : 'site-nav__link'} to="/trabalhe-conosco">Trabalhe conosco</NavLink>
                     <NavLink className={({ isActive }) => isActive ? 'site-nav__link is-active' : 'site-nav__link'} to="/fale-conosco">Fale conosco</NavLink>
                 </nav>
 

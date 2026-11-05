@@ -12,6 +12,8 @@ export function Footer() {
                 <nav className="site-footer__nav" aria-label="Links do rodapé">
                     <Link to="/">Início</Link>
                     <Link to="/sobre-nos">Sobre nós</Link>
+                    <Link to="/ecommerce">E-commerce</Link>
+                    <Link to="/trabalhe-conosco">Trabalhe conosco</Link>
                     <Link to="/fale-conosco">Fale conosco</Link>
                 </nav>
             </div>
