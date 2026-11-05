@@ -1,0 +1,72 @@
+.site-footer {
+  margin-top: auto;
+  background: #102747;
+  color: var(--color-white);
+}
+
+.site-footer__main {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding-block: 48px 40px;
+}
+
+.site-footer__brand {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-family: Manrope, 'DM Sans', 'Segoe UI', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.site-footer__main p {
+  max-width: 360px;
+  margin-bottom: 0;
+  color: rgb(255 255 255 / 70%);
+  font-size: 0.92rem;
+}
+
+.site-footer__nav {
+  display: flex;
+  align-items: flex-start;
+  gap: 26px;
+}
+
+.site-footer__nav a {
+  color: rgb(255 255 255 / 78%);
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.site-footer__nav a:hover {
+  color: var(--color-accent);
+}
+
+.site-footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-block: 18px;
+  border-top: 1px solid rgb(255 255 255 / 16%);
+  color: rgb(255 255 255 / 62%);
+  font-size: 0.78rem;
+}
+
+@media (max-width: 640px) {
+  .site-footer__main {
+    flex-direction: column;
+    gap: 28px;
+    padding-block: 38px 30px;
+  }
+
+  .site-footer__nav {
+    flex-wrap: wrap;
+    gap: 14px 22px;
+  }
+
+  .site-footer__bottom {
+    flex-direction: column;
+    gap: 6px;
+  }
+}
