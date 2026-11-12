@@ -1,0 +1,92 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 24px;
+  align-items: center;
+  padding: 28px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+}
+
+.hero-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.badge {
+  align-self: flex-start;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(79, 70, 229, 0.1);
+  color: #4338ca;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.hero-copy h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.1;
+  color: #0f172a;
+}
+
+.hero-copy p {
+  margin: 0;
+  color: #475569;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.primary-btn {
+  width: fit-content;
+  text-decoration: none;
+  background: linear-gradient(135deg, #4f46e5, #2563eb);
+  color: white;
+  font-weight: 700;
+  padding: 12px 22px;
+  border-radius: 12px;
+  box-shadow: 0 12px 22px rgba(79, 70, 229, 0.25);
+  transition: transform 0.2s ease;
+}
+
+.primary-btn:hover {
+  transform: translateY(-1px);
+}
+
+.hero-card {
+  display: grid;
+  gap: 16px;
+  padding: 20px;
+  border-radius: 20px;
+  background: linear-gradient(160deg, #111827, #1f2937);
+  color: white;
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 18px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.stat-label {
+  color: #cbd5e1;
+}
+
+.stat strong {
+  font-size: 1.6rem;
+  color: #f8fafc;
+}
+
+@media (max-width: 800px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}
