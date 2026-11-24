@@ -1,20 +1,24 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
-import AdicionarUsuario from './pages/AdicionarUsuario';
 
-function App() {
+import Cabecalho from './components/Cabecalho';
+import Rodape from './components/Rodape';
+import HomePage from './pages/HomePage';
+import UsuariosPages from './pages/UsuariosPages';
+
+export default function App() {
   return (
-    <>
-      <main className="main">
-        <h2>Bem-vindo ao Sistema de Cadastro de Usuários</h2>
-        <p>Este é um sistema simples para gerenciar usuários</p>
-        <br />
-        {/* Componente importado e fechado corretamente com a barra no final */}
-        <AdicionarUsuario />
+    <BrowserRouter>
+      <Cabecalho />
+
+      <main>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/lista-usuarios" element={<UsuariosPages />} />
+        </Routes>
       </main>
-  
-</>
-  )}
-    
-export default App;
-  
-    
+
+      <Rodape />
+    </BrowserRouter>
+  );
+}

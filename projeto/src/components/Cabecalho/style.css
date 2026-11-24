@@ -1,0 +1,23 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  background: #2563eb;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a {
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+header nav a.active {
+  background: white;
+  color: #2563eb;
+}
