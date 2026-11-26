@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AdicionarUsuario } from './adicionar-usuario';
+import { AdicionarUsuario } from './home-usuario';
 
 describe('AdicionarUsuario', () => {
   let component: AdicionarUsuario;
